@@ -1,7 +1,3 @@
----
-layout: default
----
-
 ## Projects
 
 ### Music
@@ -10,9 +6,9 @@ layout: default
 * [andyhannum@soundcloud](http://www.soundcloud.com/andyhannum) (the rest of my genre-bending experiments)
 
 ### Coding
-* ChordMelodyGen
+* [ChordMelodyGen](http://www.chordmelody.io/)
   - Generate guitar chord melodies from jazz leadsheets in MusicXML format
-* Djangobot
+* [Djangobot](https://digitalcommons.du.edu/etd/1532/)
   - Using neural networks to generate jazz solos in the style of Django Reinhardt
-* ABC Sightreader
+* [ABC Sightreader](http://abcsightreader.com/)
   - In-browser sightreading trainer using ABC notation and microphone-based pitch detection
