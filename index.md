@@ -6,7 +6,7 @@
 * [andyhannum@soundcloud](http://www.soundcloud.com/andyhannum) (the rest of my genre-bending experiments)
 
 ### Coding
-* [ChordMelodyGen](http://www.chordmelody.io/)
+* [chordmelody.io](http://www.chordmelody.io/)
   - Generate guitar chord melodies from jazz leadsheets in MusicXML format
 * [Djangobot](https://digitalcommons.du.edu/etd/1532/)
   - Using neural networks to generate jazz solos in the style of Django Reinhardt
