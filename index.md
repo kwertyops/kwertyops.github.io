@@ -3,7 +3,7 @@
 ### Music
 * [LAPOMPE](http://www.lapompeband.com/) (a gypsy swing band)
 * [Look Lively](http://www.looklivelyjazz.com/) (a straight-ahead and modern jazz quartet)
-* [andyhannum@soundcloud](http://www.soundcloud.com/andyhannum) (the rest of my genre-bending experiments)
+* [andyhannum@soundcloud](http://www.soundcloud.com/andyhannum) (the rest of my musical experiments)
 
 ### Coding
 * [chordmelody.io](http://www.chordmelody.io/)
