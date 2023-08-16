@@ -175,6 +175,8 @@ section {
   width:500px;
   float:right;
   padding-bottom:50px;
+  overflow-y: scroll;
+  height: 80vh;
 }
 
 small {
@@ -225,7 +227,7 @@ footer {
   }
 
   header ul {
-    position:absolute;
+    // position:absolute;
     right:50px;
     top:52px;
   }
