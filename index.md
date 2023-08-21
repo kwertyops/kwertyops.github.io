@@ -1,14 +1,14 @@
-## Projects
+### Music Projects
+* [LAPOMPE](http://www.lapompeband.com/)
+* [Look Lively](http://www.looklivelyjazz.com/)
+* [andyhannum@soundcloud](http://www.soundcloud.com/andyhannum)
 
-### Music
-* [LAPOMPE](http://www.lapompeband.com/) (a gypsy swing band)
-* [Look Lively](http://www.looklivelyjazz.com/) (a straight-ahead and modern jazz quartet)
-* [andyhannum@soundcloud](http://www.soundcloud.com/andyhannum) (the rest of my musical experiments)
-
-### Coding
+### Code Projects
 * [chordmelody.io](http://www.chordmelody.io/)
-  - Generate guitar chord melodies from jazz leadsheets in MusicXML format
 * [Djangobot](https://digitalcommons.du.edu/etd/1532/)
-  - Using neural networks to generate jazz solos in the style of Django Reinhardt
 * [ABC Sightreader](http://abcsightreader.com/)
-  - In-browser sightreading trainer using ABC notation and microphone-based pitch detection
+
+### Curriculum Vitae
+* [High-accuracy machine learning techniques for functional connectome fingerprinting and cognitive state decoding, 2023](https://doi.org/10.1002/hbm.26423)
+* [RNN-based generation of polyphonic music and jazz improvisation, 2018](https://digitalcommons.du.edu/etd/1532/)
+* [Open in Action: Music, Computing and Open Data, 2016](https://research.gold.ac.uk/id/eprint/19089/)
