@@ -99,6 +99,9 @@ repos = requests.get(
 
 for repo in repos.json():
     repo_name = repo['name']
+    if repo_name == 'kwertyops.github.io':
+        continue
+
     commits = requests.get(
         f'https://api.github.com/repos/{github_username}/{repo_name}/commits',
         headers=headers
