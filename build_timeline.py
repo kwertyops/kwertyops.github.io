@@ -166,6 +166,8 @@ for event in all_events:
     date = str(event['time']).split(' ')[0]
     clock = str(event['time']).split(' ')[1].replace(':', '-')
     filename = f"_posts/{date}-{clock}-{event['source']}.md"
+    if 'text' in event and event['text'] is not None:
+        event['text'] = event['text'].replace('<p>', '\n\n')
     with open(filename, 'w') as f:
         f.write(
             f'''---
