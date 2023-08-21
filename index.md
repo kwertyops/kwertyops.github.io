@@ -1,3 +1,6 @@
+---
+title: github.io
+---
 ### Music Projects
 * [LAPOMPE](http://www.lapompeband.com/)
 * [Look Lively](http://www.looklivelyjazz.com/)
