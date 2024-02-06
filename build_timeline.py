@@ -36,9 +36,13 @@ for work in data['group']:
     publication_datetime = work['work-summary'][0]['publication-date']
     year = publication_datetime['year']['value']
     month = publication_datetime['month']['value']
-    day = publication_datetime['day']['value']
-    publication_date = f"{year}-{month}-{day}"
-    publication_datetime = datetime.datetime.strptime(publication_date, '%Y-%m-%d')
+    try:
+        day = publication_datetime['day']['value']
+        publication_date = f"{year}-{month}-{day}"
+        publication_datetime = datetime.datetime.strptime(publication_date, '%Y-%m-%d')
+    except TypeError:
+        publication_date = f"{year}-{month}"
+        publication_datetime = datetime.datetime.strptime(publication_date, '%Y-%m')
     url = work['work-summary'][0]['path']
     url = f'https://orcid.org/{url}'
 
