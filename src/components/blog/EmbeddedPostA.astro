@@ -35,7 +35,7 @@ const { Content } = await post.render();
 		<FormattedDate date={postDate}/>
 	</p>
 	{withDesc && (
-		<div class="post-content prose-cody">
+		<div class="post-content prose prose-cody prose-sm prose-headings:font-semibold prose-headings:ml-4 prose-headings:before:absolute prose-headings:before:-ms-4 prose-headings:before:text-accent prose-headings:before:content-['#'] prose-th:before:content-none prose-a:text-accent">
 		  <Content />
 		</div>
 	  )}
