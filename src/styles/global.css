@@ -5,6 +5,7 @@
 @layer base {
   :root {
     color-scheme: light;
+    font-variant-ligatures: none;
     /* https://tailwindcss.com/docs/customizing-colors#using-css-variables */
     --theme-bg: #efefef;
     --theme-text: #222222;
