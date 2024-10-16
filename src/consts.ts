@@ -18,11 +18,11 @@ type SocialLink = {
 }
 
 export const siteConfig: Config = {
-  title: "Astro Theme Cody",
+  title: "kwertyops",
   description: "",
   lang: "en-GB",
   profile: {
-    author: "Amy Dang",
+    author: "Andrew Hannum",
     description: "your bio description"
   }
 }

@@ -11,7 +11,7 @@
     --theme-accent: #dd7878;
     --theme-accent-2: #bcc0cd;
     --theme-surface: #e6e6e6;
-    --theme-quote: #dd7878;
+    --theme-quote: #d55151;
     --theme-highlight: #dd7878;
   }
 
@@ -22,7 +22,7 @@
     --theme-accent: #93e1d4;
     --theme-accent-2: #545454;
     --theme-surface: #2f2f2f;
-    --theme-quote: #93e1d4;
+    --theme-quote: #5bdbc5;
     --theme-highlight: #93e1d4;
   }
 
@@ -39,7 +39,9 @@
   */
 
   .prose-cody blockquote {
-    @apply text-quote border-l-0;
+    @apply text-quote border-l-[20px] pl-1.5;
+    @apply prose-quoteless;
+    font-style: normal;
   }
 
   .prose-cody a {
@@ -50,9 +52,9 @@
     font-weight: 700;
   }
 
-  .prose-cody :where(code):not(:where([class~=not-prose],[class~=not-prose] *)) {
+  /* .prose-cody :where(code):not(:where([class~=not-prose],[class~=not-prose] *)) {
     @apply bg-accent !text-surface px-1 py-0;
-  }
+  } */
 
   .prose :where(code):not(:where([class~="not-prose"],[class~="not-prose"] *))::before{
     content: none !important;

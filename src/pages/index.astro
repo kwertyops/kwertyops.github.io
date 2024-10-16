@@ -1,6 +1,6 @@
 ---
 import BaseLayout from '../layouts/Base.astro';
-import PostPreview from "@/components/blog/PostPreviewB";
+import EmbeddedPost from "@/components/blog/EmbeddedPostB";
 import SocialMediaLinks from "@/components/SocialMediaLinks";
 import { getAllPosts, sortMDByDate, sortMDByPinned } from "@/utils";
 
@@ -61,7 +61,7 @@ const tech: Array<{ title: string; desc: string; href: string }> = [
 	<section class="mt-8 sm:mt-16">
 		<h2 class="title">Posts</h2>
 		<ul class="space-y-4 sm:space-y-2">
-			{allPostsByPinned.map(p => <PostPreview post={p}/>)}
+			{allPostsByPinned.map(p => <EmbeddedPost post={p}/>)}
 		</ul>
 	</section>
 

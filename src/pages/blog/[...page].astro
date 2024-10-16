@@ -2,7 +2,7 @@
 import type { Page, GetStaticPaths } from "astro";
 import type { CollectionEntry } from "astro:content";
 import BaseLayout from "@/layouts/Sidebar";
-import PostPreview from "@/components/blog/PostPreviewA";
+import EmbeddedPost from "@/components/blog/EmbeddedPostA";
 import Pagination from "@/components/Pagination";
 import { getAllPosts, getUniqueTags, sortMDByDate, sortMDByPinned } from "@/utils";
 
@@ -49,7 +49,7 @@ const paginationProps = {
 		<ul class="flex flex-col gap-4">
 			{
 			page.data.map(post => (
-				<PostPreview post={post} withDesc/>
+				<EmbeddedPost post={post} withDesc/>
 			))
 			}
 		</ul>
