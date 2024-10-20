@@ -40,7 +40,7 @@
   */
 
   .prose-cody blockquote {
-    @apply text-quote border-l-[20px] pl-1.5 my-1;
+    @apply text-quote border-l-[6px] pl-4 my-1;
     @apply prose-quoteless;
     font-style: normal;
   }
