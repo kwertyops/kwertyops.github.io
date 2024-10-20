@@ -36,6 +36,7 @@ const { Content } = await post.render();
 	</p>
 	{withDesc && (
 		<div class="post-content prose prose-cody prose-sm prose-headings:font-semibold prose-headings:ml-4 prose-headings:before:absolute prose-headings:before:-ms-4 prose-headings:before:text-accent prose-headings:before:content-['#'] prose-th:before:content-none prose-a:text-accent">
+		  { post.data.sourceUrl && <p><a class="source-url" href={post.data.sourceUrl}>[{post.data.sourceUrl}]</a></p> }
 		  <Content />
 		</div>
 	  )}
@@ -50,5 +51,9 @@ const { Content } = await post.render();
 	}
 	.embedded-post {
 		background-color: var(--theme-bg);
+	}
+	.embedded-post .post-content .source-url {
+		font-size: smaller;
+		color: var(--theme-callout);
 	}
 </style>

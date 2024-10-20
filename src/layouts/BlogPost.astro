@@ -21,6 +21,7 @@ const {
 		title,
 		description,
 		pubDate,
+		sourceUrl,
 		updatedDate,
 		heroImage,
 		ogImage,
@@ -86,6 +87,11 @@ const articleDate = updatedDate?.toISOString() ?? pubDate.toISOString();
 				</ul>
 			)}
 		</header>
+		{sourceUrl && (
+			<p>
+				<a class="source-url" href={sourceUrl}>[{sourceUrl}]</a>
+			</p>
+		)}
 		<hr class="my-4"/>
 		<main class="prose-sm prose-headings:font-semibold prose-headings:ml-4 prose-headings:before:absolute prose-headings:before:-ms-4 prose-headings:before:text-accent prose-headings:before:content-['#'] prose-th:before:content-none prose-a:text-accent">
 			<slot />
@@ -116,3 +122,10 @@ const articleDate = updatedDate?.toISOString() ?? pubDate.toISOString();
 </Layout>
 
 <CopyBtn/>
+
+<style>
+	.source-url {
+		font-size: smaller;
+		color: var(--theme-callout);
+	}
+</style>

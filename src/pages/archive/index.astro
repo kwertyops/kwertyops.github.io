@@ -10,7 +10,7 @@ import { siteConfig } from '../../consts';
 import type { CollectionEntry } from "astro:content";
 
 const allPosts = await getAllPosts();
-const allPostsByDate = sortMDByDate(allPosts, "ascending");
+const allPostsByDate = sortMDByDate(allPosts, "descending");
 
 const getGroupsByYear = (
 	posts: Array<CollectionEntry<"blog">>

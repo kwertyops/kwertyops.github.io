@@ -14,6 +14,7 @@
     --theme-surface: #e6e6e6;
     --theme-quote: #d55151;
     --theme-highlight: #dd7878;
+    --theme-callout: #567fac;
   }
 
   :root.dark {
@@ -25,6 +26,7 @@
     --theme-surface: #2f2f2f;
     --theme-quote: #5bdbc5;
     --theme-highlight: #93e1d4;
+    --theme-callout: #b15f5f;
   }
 
   html {
