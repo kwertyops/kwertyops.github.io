@@ -14,11 +14,41 @@ export async function getAllPosts(filterHidden: boolean = false) {
 		return filterHidden ? !data.hide : true;
 	});
 }
- 
+
+export async function getAllMusic(filterHidden: boolean = false) {
+	return await getCollection("music", ({ data }) => {
+		if (import.meta.env.PROD) {
+			if (filterHidden) {
+				return !data.hide;
+			}
+
+			// on production: exclude draft posts by default
+			return !data.draft;
+		}
+
+		return filterHidden ? !data.hide : true;
+	});
+}
+
+export async function getAllClippings(filterHidden: boolean = false) {
+	return await getCollection("clipping", ({ data }) => {
+		if (import.meta.env.PROD) {
+			if (filterHidden) {
+				return !data.hide;
+			}
+
+			// on production: exclude draft posts by default
+			return !data.draft;
+		}
+
+		return filterHidden ? !data.hide : true;
+	});
+}
+
 // ascending = oldest to newest date
 // descending = newest to oldest date
 export function sortMDByDate(
-	posts: Array<CollectionEntry<"blog">>, 
+	posts: Array<CollectionEntry<"blog" | "music" | "clipping">>, 
 	order: "ascending" | "descending" = "descending"
 ) {
 	// -1 = ascending
@@ -33,7 +63,7 @@ export function sortMDByDate(
 }
 
 
-export function sortMDByPinned(posts: Array<CollectionEntry<"blog">>) {
+export function sortMDByPinned(posts: Array<CollectionEntry<"blog" | "music" | "clipping">>) {
 	return posts.sort((a, b) => {
 		const aOrder = a.data.order ?? 100;
 		const bOrder = b.data.order ?? 100;
@@ -43,7 +73,7 @@ export function sortMDByPinned(posts: Array<CollectionEntry<"blog">>) {
 
 export function getPostsByTag(
 	tag: string, 
-	posts: Array<CollectionEntry<"blog">>
+	posts: Array<CollectionEntry<"blog" | "music" | "clipping">>
 ) {
 	return posts.filter(post => {
 		if (post.data.tags) {
@@ -55,7 +85,7 @@ export function getPostsByTag(
 
 export function getPostsBySeries (
 	series: string,
-	posts: Array<CollectionEntry<"blog">>
+	posts: Array<CollectionEntry<"blog" | "music" | "clipping">>
 ) {
 	return posts.filter(post => {
 		if (post.data.series) {

@@ -1,0 +1,19 @@
+---
+import { getCollection } from 'astro:content';
+import { getEntryBySlug } from 'astro:content';
+import { notFound } from 'astro:middleware';
+import ClippingPost from '@/layouts/ClippingPost.astro';
+
+const { slug } = Astro.params;
+const post = await getEntryBySlug('clipping', slug);
+
+if (!post) {
+  throw notFound();
+}
+
+const { Content } = await post.render();
+---
+
+<ClippingPost post={post}>
+  <Content />
+</ClippingPost>

@@ -3,10 +3,18 @@ import { getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/Base.astro';
 import { getUniqueTagsWithCount } from '@/utils';
 
-const posts = (await getCollection('blog', ({data}) => {
+const blogPosts = (await getCollection('blog', ({data}) => {
 		return import.meta.env.PROD ? data.draft !== true : true;
 }));
-const tags = getUniqueTagsWithCount(posts);
+const musicPosts = (await getCollection('music', ({data}) => {
+		return import.meta.env.PROD ? data.draft !== true : true;
+}));
+const clippingPosts = (await getCollection('clipping', ({data}) => {
+		return import.meta.env.PROD ? data.draft !== true : true;
+}));
+
+const allPosts = [...blogPosts, ...musicPosts, ...clippingPosts];
+const tags = getUniqueTagsWithCount(allPosts);
 ---
 
 <BaseLayout title="All Tags">

@@ -1,0 +1,29 @@
+---
+import { getCollection } from 'astro:content';
+import { getAllPosts, sortMDByDate, getPostsByTag } from '@/utils';
+import BaseLayout from '@/layouts/Base.astro';
+import Pagination from '@/components/Pagination.astro';
+import PostPreviewA from '@/components/clipping/PostPreviewA.astro';
+import PostPreviewB from '@/components/clipping/PostPreviewB.astro';
+
+const PAGE_SIZE = 10;
+
+const allPosts = await getCollection('clipping');
+const posts = sortMDByDate(allPosts);
+const page = Number(Astro.params.page) || 1;
+const start = (page - 1) * PAGE_SIZE;
+const end = page * PAGE_SIZE;
+const total = posts.length;
+const totalPages = Math.ceil(total / PAGE_SIZE);
+const currentPagePosts = posts.slice(start, end);
+---
+
+<BaseLayout title="Clippings">
+  <h1>Clippings</h1>
+  <ul>
+    {currentPagePosts.map(post => (
+      <PostPreviewA post={post} />
+    ))}
+  </ul>
+  <Pagination page={page} totalPages={totalPages} base="/clippings" />
+</BaseLayout>
