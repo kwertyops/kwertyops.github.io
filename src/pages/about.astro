@@ -9,30 +9,10 @@ const tech: Array<{ title: string; desc: string; href: string }> = [
 		href: "https://astro.build",
 	},
 	{
-		title: "Astro Assets",
-		desc: "Built-in optimized asset support.",
-		href: "https://docs.astro.build/en/guides/assets/",
-	},
-	{
-		title: "Tailwind CSS",
-		desc: "Rapidly build modern websites without ever leaving your HTML.",
-		href: "https://tailwindcss.com",
-	},
-	{
-		title: "Markdown",
-		desc: "Simple and easy-to-use markup language.",
-		href: "https://www.markdownguide.org/",
-	},
-	{
-		title: "MDX",
-		desc: "Markdown for the component era.",
-		href: "https://mdxjs.com/",
-	},
-	{
-		title: "Astro Icon",
-		desc: "An easy to use Icon component for Astro.",
-		href: "https://github.com/natemoo-re/astro-icon#readme",
-	},
+		title: "Cody Theme for Astro",
+		desc: "A minimalist blog theme built with Astro.",
+		href: "https://github.com/kirontoo/astro-theme-cody",
+	}
 ];
 ---
 
@@ -41,29 +21,7 @@ const tech: Array<{ title: string; desc: string; href: string }> = [
 	description="Lorem ipsum dolor sit amet"
 	image="/blog-placeholder-about.jpg"
 >
-	<h1 class="title">About</h1>
-	<p>
-		Hi, I'm a Astro theme. I'm particularly great for starting a blog or a 
-		portfolio. 
-		<div>
-			I was based on two other themes:
-			<a 
-				class="cody-link" 
-				href="https://astro-theme-cactus.netlify.app"
-				target="_blank"
-				rel="noopener noreferrer"
-			>Astro Cactus</a>
-			and
-			<a 
-				class="cody-link" 
-				target="_blank"
-				rel="noopener noreferrer"
-				href="https://risotto.joeroe.io"
-			>Risotto</a>.
-		</div>
-	</p>
-
-	<h2 class="title mt-4">Here are my built-in features:</h2>
+	<h2 class="title mt-4">Here are some of my interests:</h2>
 	<ul class="list-inside list-disc">
 		<li>Looks great on any device</li>
 		<li>Fully Responsive</li>
@@ -72,40 +30,24 @@ const tech: Array<{ title: string; desc: string; href: string }> = [
 		<li>Built with tailwindcss</li>
 		<li>Pin posts and projects</li>
 	</ul>
-	<p class="mt-4">
-		Clone or fork my 
-		<a
-			class="cody-link inline-block"
-			href="https://github.com/kirontoo/astro-theme-cody"
-			target="_blank"
-			rel="noopener noreferrer"
-			aria-label="github repository"
-		>
-			repo
-		</a>
-		if you like me!
-	</p>
 
-
-	<section class="mt-16">
-		<h2 class="title">Technologies</h2>
-		<ul class="space-y-4 sm:space-y-2">
-			{
-				tech.map(({ href, title, desc }) => (
-					<li>
-						<a
-							href={href}
-							target="_blank"
-							rel="noopener noreferrer"
-							class="cody-link inline-block"
-						>
-							{title}
-						</a>: 
-						<p class="inline-block sm:mt-2">{desc}</p>
-					</li>
-				))
-			}
-		</ul>
-	</section>
+	<h2 class="title mt-4">About this website:</h2>
+	<ul class="space-y-4 sm:space-y-2">
+		{
+			tech.map(({ href, title, desc }) => (
+				<li>
+					<a
+						href={href}
+						target="_blank"
+						rel="noopener noreferrer"
+						class="cody-link inline-block"
+					>
+						{title}
+					</a>: 
+					<p class="inline-block sm:mt-2">{desc}</p>
+				</li>
+			))
+		}
+	</ul>
 </Layout>
 
