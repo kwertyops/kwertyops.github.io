@@ -1,19 +1,22 @@
 ---
-import { getCollection } from 'astro:content';
-import { getEntryBySlug } from 'astro:content';
-import { notFound } from 'astro:middleware';
-import ClippingPost from '@/layouts/ClippingPost.astro';
 
-const { slug } = Astro.params;
-const post = await getEntryBySlug('clipping', slug);
+import type { InferGetStaticPropsType, GetStaticPaths } from 'astro';
+import ClippingPost from '../../layouts/ClippingPost.astro';
+import { getAllClippings } from '@/utils';
 
-if (!post) {
-  throw notFound();
-}
+export const getStaticPaths = (async () => {
+	const musicEntries = await getAllClippings();
+	return musicEntries.map((post) => ({
+		params: { slug: post.slug },
+		props: { post },
+	}));
+}) satisfies GetStaticPaths;
+type Props = InferGetStaticPropsType<typeof getStaticPaths>;
 
+const { post } = Astro.props;
 const { Content } = await post.render();
 ---
 
 <ClippingPost post={post}>
-  <Content />
+	<Content />
 </ClippingPost>

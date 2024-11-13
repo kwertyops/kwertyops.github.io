@@ -1,14 +1,22 @@
 ---
-import { getCollection } from 'astro:content';
-import { getEntryBySlug } from 'astro:content';
-import MusicPost from '@/layouts/MusicPost.astro';
 
-const allPosts = await getCollection('music');
-const post = await getEntryBySlug('music', Astro.params.slug);
+import type { InferGetStaticPropsType, GetStaticPaths } from 'astro';
+import MusicPost from '../../layouts/MusicPost.astro';
+import { getAllMusic } from '@/utils';
 
-if (!post) {
-  throw new Error(`Post not found for slug: ${Astro.params.slug}`);
-}
+export const getStaticPaths = (async () => {
+	const musicEntries = await getAllMusic();
+	return musicEntries.map((post) => ({
+		params: { slug: post.slug },
+		props: { post },
+	}));
+}) satisfies GetStaticPaths;
+type Props = InferGetStaticPropsType<typeof getStaticPaths>;
+
+const { post } = Astro.props;
+const { Content } = await post.render();
 ---
 
-<MusicPost post={post} />
+<MusicPost post={post}>
+	<Content />
+</MusicPost>

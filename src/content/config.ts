@@ -14,6 +14,7 @@ const blog = defineCollection({
 	schema: () => z.object({
 		title: z.string().max(150),
 		description: z.string().max(250),
+		sourceUrl: z.string().optional(),
 		// Transform string to Date object
 		pubDate: z
 			.string()
@@ -72,6 +73,7 @@ const music = defineCollection({
 	schema: () => z.object({
 		title: z.string().max(150),
 		description: z.string().max(250),
+		sourceUrl: z.string().optional(),
 		pubDate: z
 			.string()
 			.or(z.date())
@@ -103,6 +105,7 @@ const clipping = defineCollection({
 	schema: () => z.object({
 		title: z.string().max(150),
 		description: z.string().max(250),
+		sourceUrl: z.string().optional(),
 		pubDate: z
 			.string()
 			.or(z.date())
