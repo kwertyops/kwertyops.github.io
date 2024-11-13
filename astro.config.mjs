@@ -2,6 +2,7 @@
 import { defineConfig } from 'astro/config';
 import mdx from '@astrojs/mdx';
 import sitemap from '@astrojs/sitemap';
+import icon from "astro-icon";
 import { remarkReadingTime } from './src/utils/remark-reading-time.mjs';
 
 import tailwind from "@astrojs/tailwind";
@@ -9,7 +10,7 @@ import tailwind from "@astrojs/tailwind";
 // https://astro.build/config
 export default defineConfig({
   site: 'https://astro-theme-cody.netlify.app',
-  integrations: [mdx(), sitemap(), tailwind()],
+  integrations: [mdx(), sitemap(), tailwind(), icon()],
   markdown: {
     remarkPlugins: [remarkReadingTime],
     syntaxHighlight: 'shiki',

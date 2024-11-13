@@ -33,17 +33,22 @@ export const socialLinks: Array<SocialLink> = [
   {
     icon: "mdi:github",
     friendlyName: "Github",
-    link: "https://github.com/kirontoo/astro-theme-cody",
+    link: "https://github.com/kwertyops",
   },
   {
     icon: "mdi:linkedin",
     friendlyName: "LinkedIn",
-    link: "#",
+    link: "https://www.linkedin.com/in/andrew-hannum-24488058/",
+  },
+  {
+    icon: "ri:bluesky-fill",
+    friendlyName: "Bluesky",
+    link: "https://bsky.app/profile/kwertyops.bsky.social",
   },
   {
     icon: "mdi:email",
     friendlyName: "email",
-    link: "mailto:ndangamy@gmail.com",
+    link: "mailto:andrew.hannum@gmail.com",
   },
   {
     icon: "mdi:rss",
