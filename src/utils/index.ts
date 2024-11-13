@@ -8,6 +8,8 @@ export {
 
 export {
   getAllPosts,
+  getAllMusic,
+  getAllClippings,
   getPostsByTag,
   getPostsBySeries,
   sortMDByDate,

@@ -14,6 +14,7 @@ const blog = defineCollection({
 	schema: () => z.object({
 		title: z.string().max(150),
 		description: z.string().max(250),
+		sourceUrl: z.string().optional(),
 		// Transform string to Date object
 		pubDate: z
 			.string()
@@ -67,4 +68,68 @@ const project = defineCollection({
 	})
 });
 
-export const collections = { blog, project };
+const music = defineCollection({
+	type: 'content',
+	schema: () => z.object({
+		title: z.string().max(150),
+		description: z.string().max(250),
+		sourceUrl: z.string().optional(),
+		pubDate: z
+			.string()
+			.or(z.date())
+			.transform(val => new Date(val)),
+		updatedDate: z
+			.string()
+			.or(z.date())
+			.transform(val => val ? new Date(val) : undefined)
+			.optional(),
+		heroImage: z.object({
+			src: z.string(),
+			alt: z.string().optional(),
+		}).optional(),
+		ogImage: z.string().optional(),
+		tags: z
+			.array(z.string())
+			.default([])
+			.transform(removeDupsAndLowercase)
+			.optional(),
+		series: z.string().optional(),
+		draft: z.boolean().optional().default(false),
+		order: z.number().min(1).max(5).optional(),
+		hide: z.boolean().optional().default(false)
+	}),
+});
+
+const clipping = defineCollection({
+	type: 'content',
+	schema: () => z.object({
+		title: z.string().max(150),
+		description: z.string().max(250),
+		sourceUrl: z.string().optional(),
+		pubDate: z
+			.string()
+			.or(z.date())
+			.transform(val => new Date(val)),
+		updatedDate: z
+			.string()
+			.or(z.date())
+			.transform(val => val ? new Date(val) : undefined)
+			.optional(),
+		heroImage: z.object({
+			src: z.string(),
+			alt: z.string().optional(),
+		}).optional(),
+		ogImage: z.string().optional(),
+		tags: z
+			.array(z.string())
+			.default([])
+			.transform(removeDupsAndLowercase)
+			.optional(),
+		series: z.string().optional(),
+		draft: z.boolean().optional().default(false),
+		order: z.number().min(1).max(5).optional(),
+		hide: z.boolean().optional().default(false)
+	}),
+});
+
+export const collections = { blog, project, music, clipping };
