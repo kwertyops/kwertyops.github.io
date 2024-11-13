@@ -2,7 +2,7 @@
 title: 'Test Music'
 description: 'This is a test music post'
 pubDate: 'Oct 01 2022'
-tags: ["test", "music"]
+tags: []
 updatedDate: 'Oct 02 2022'
 ---
 

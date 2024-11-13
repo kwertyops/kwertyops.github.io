@@ -2,7 +2,7 @@
 title: 'Test Clipping'
 description: 'This is a test clipping post'
 pubDate: 'Oct 01 2022'
-tags: ["test", "clipping"]
+tags: []
 updatedDate: 'Oct 02 2022'
 ---
 
