@@ -45,11 +45,28 @@
     @apply text-quote border-l-[6px] pl-4 my-1;
     @apply prose-quoteless;
     font-style: normal;
+    position: relative;
+    border-color: var(--theme-surface);
   }
 
-  .prose-cody a {
-    @apply no-underline;
+  .prose-cody blockquote:before {
+    content: "\201d";
+    font-family: symbol;
+    font-size: 1.5rem;
+    font-style: normal;
+    position: absolute;
+    top: -0.75rem;
+    left: -0.5rem;
+    color: var(--theme-quote);
+    background: var(--theme-surface);
+    padding-left: 2px;
+    padding-right: 2px;
+    height: 1.5rem;
   }
+
+  /* .prose-cody a {
+    @apply no-underline;
+  } */
 
   .prose-cody strong {
     font-weight: 700;
