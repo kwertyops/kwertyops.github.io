@@ -72,6 +72,10 @@
     font-weight: 700;
   }
 
+  .prose-sm :where(code):not(:where([class~="not-prose"], [class~="not-prose"] *)) {
+    font-size: 1.0em !important;
+  }
+
   /* .prose-cody :where(code):not(:where([class~=not-prose],[class~=not-prose] *)) {
     @apply bg-accent !text-surface px-1 py-0;
   } */

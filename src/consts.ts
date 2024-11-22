@@ -20,7 +20,7 @@ export const siteConfig: Config = {
   lang: "en-GB",
   profile: {
     author: "Andrew Hannum",
-    description: "your bio description"
+    description: "professor of cs ⋅ musician ⋅ technological humanist"
   }
 }
 
@@ -67,7 +67,7 @@ export const NAV_LINKS: Array<{ title: string, path: string }> = [
     path: "/about",
   },
   {
-    title: "Blog",
+    title: "Feed",
     path: "/blog",
   },
   {
