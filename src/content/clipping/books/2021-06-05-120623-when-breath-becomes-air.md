@@ -1,0 +1,9 @@
+---
+title: "books > When Breath Becomes Air (Paul Kalanithi)"
+description: ""
+pubDate: 2021-06-05
+quoteAuthor: "Paul Kalanithi"
+tags: []
+---
+
+> I, like most scientific types, came to believe in the possibility of a material conception of reality, an ultimately scientific worldview that would grant a complete metaphysics, minus outmoded concepts like souls, God, and bearded white men in robes. I spent a good chunk of my twenties trying to build a frame for such an endeavor. The problem, however, eventually became evident: to make science the arbiter of metaphysics is to banish not only God from the world but also love, hate, meaning—to consider a world that is self-evidently not the world we live in. That’s not to say that if you believe in meaning, you must also believe in God. It is to say, though, that if you believe that science provides no basis for God, then you are almost obligated to conclude that science provides no basis for meaning and, therefore, life itself doesn’t have any. In other words, existential claims have no weight; all knowledge is scientific knowledge. Yet the paradox is that scientific methodology is the product of human hands and thus cannot reach some permanent truth. We build scientific theories to organize and manipulate the world, to reduce phenomena into manageable units. Science is based on reproducibility and manufactured objectivity. As strong as that makes its ability to generate claims about matter and energy, it also makes scientific knowledge inapplicable to the existential, visceral nature of human life, which is unique and subjective and unpredictable. Science may provide the most useful way to organize empirical, reproducible data, but its power to do so is predicated on its inability to grasp the most central aspects of human life: hope, fear, love, hate, beauty, envy, honor, weakness, striving, suffering, virtue.

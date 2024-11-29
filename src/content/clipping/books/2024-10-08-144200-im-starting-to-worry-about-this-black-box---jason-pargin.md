@@ -1,0 +1,9 @@
+---
+title: "books > I'm Starting to Worry About This Black Box (Jason Pargin)"
+description: ""
+pubDate: 2024-10-08
+quoteAuthor: "Jason Pargin"
+tags: []
+---
+
+> From the blog of Phil Greene: What must be understood is that the parasite manipulates with pleasure. When Euhaplorchis californiensis infects the California killifish, it need not inject venom or mind-altering chemicals to subdue its victim; it merely tickles the dopamine receptors until the fish thrashes and splashes with what to it must feel like rapturous joy, a behavior that quickly attracts predators, allowing the fish to be eaten and the parasite to spread. The mechanism is simple and the operation identical in the micro or macro, in animals or humans: a burst of short-term pleasure will blind the subject to its long-term well-being and cause it to function as little more than a puppet. Our old religions created strong societies by cultivating humans who could delay gratification, building a tolerance for suffering that would see them through the hard winter, the invading army, the totalitarian usurper. The modern religion of consumerist instant gratification, on the other hand, serves only the masters for whom the zombified subjects make perfect cattle, relinquishing their freedom and individuality in exchange for the next paltry release of soothing opiates. The effects wear off sooner with each dose, each time leaving the subject hungry and ashamed, a sort of post-ejaculate clarity that in the moment reveals the true state of its abject slavery, making the victim all the more eager to submit fully to the only source of pleasure and comfort it has ever known. The question is not how to save mankind but if what we are attempting to save can even still be called mankind.
