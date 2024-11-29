@@ -65,7 +65,7 @@ const articleDate = updatedDate?.toISOString() ?? pubDate.toISOString();
 			</div>
 			<span class="font-semibold text-textColor flex gap-2 items-center">
 				<FormattedDate date={pubDate} dateTimeOptions={dateTimeOptions}/>
-				<span>
+				<!-- <span>
 					/ {minutesRead}
 				</span>
 				{
@@ -74,7 +74,7 @@ const articleDate = updatedDate?.toISOString() ?? pubDate.toISOString();
 							Last updated: <FormattedDate date={updatedDate} dateTimeOptions={dateTimeOptions} />
 						</div>
 					)
-				}
+				} -->
 			</span>
 			{tags && tags.length > 0 && (
 				<ul class="not-prose flex gap-2 flex-wrap">
