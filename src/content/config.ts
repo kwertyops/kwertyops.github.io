@@ -49,6 +49,8 @@ const project = defineCollection({
 	schema: () => z.object({
 		title: z.string(),
 		description: z.string(),
+		sourceUrl: z.string().optional(),
+		authors: z.string().optional(),
 		pubDate: z
 			.string()
 			.or(z.date())
