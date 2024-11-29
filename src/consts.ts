@@ -20,7 +20,7 @@ export const siteConfig: Config = {
   lang: "en-GB",
   profile: {
     author: "Andrew Hannum",
-    description: "professor of cs ⋅ musician ⋅ technological humanist"
+    description: "professor of cs ⋅ musician"
   }
 }
 
@@ -62,10 +62,10 @@ export const NAV_LINKS: Array<{ title: string, path: string }> = [
     title: "Home",
     path: "/",
   },
-  {
-    title: "About",
-    path: "/about",
-  },
+  // {
+  //   title: "About",
+  //   path: "/about",
+  // },
   {
     title: "Feed",
     path: "/blog",
@@ -82,8 +82,8 @@ export const NAV_LINKS: Array<{ title: string, path: string }> = [
     title: "Projects",
     path: '/projects'
   },
-  {
-    title: "Archive",
-    path: '/archive'
-  }
+  // {
+  //   title: "Archive",
+  //   path: '/archive'
+  // }
 ];

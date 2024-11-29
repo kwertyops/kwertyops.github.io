@@ -60,7 +60,7 @@ const articleDate = updatedDate?.toISOString() ?? pubDate.toISOString();
 				</div>
 			)}
 			<div class="flex gap-2 items-center">
-				<h1 class="text-3xl my-0">{title}</h1>
+				<h2 class="title clipping-title my-0">{title}</h2>
 				{ draft && (<span class="px-1 py-0 bg-red-200 text-red-600 text-sm font-semibold">draft</span>)}
 			</div>
 			<span class="font-semibold text-textColor flex gap-2 items-center">
@@ -76,7 +76,7 @@ const articleDate = updatedDate?.toISOString() ?? pubDate.toISOString();
 					)
 				}
 			</span>
-			{tags && (
+			{tags && tags.length > 0 && (
 				<ul class="not-prose flex gap-2 flex-wrap">
 					<Icon class="w-5 h-5" name="carbon:tag-group" aria-hidden="true" focusable="false"/>
 					{tags.map((tag: string) => (
@@ -87,13 +87,13 @@ const articleDate = updatedDate?.toISOString() ?? pubDate.toISOString();
 				</ul>
 			)}
 		</header>
-		{sourceUrl && (
-			<p>
-				<a class="source-url" href={sourceUrl}>[{sourceUrl}]</a>
-			</p>
-		)}
 		<hr class="my-4"/>
-		<main class="prose-sm prose-headings:font-semibold prose-headings:ml-4 prose-headings:before:absolute prose-headings:before:-ms-4 prose-headings:before:text-accent prose-headings:before:content-['#'] prose-th:before:content-none prose-a:text-accent">
+		<main class="page-content prose-sm prose-headings:font-semibold prose-headings:ml-4 prose-headings:before:absolute prose-headings:before:-ms-4 prose-headings:before:text-accent prose-headings:before:content-['#'] prose-th:before:content-none prose-a:text-accent">
+			{sourceUrl && (
+				<p>
+					<a class="source-url" href={sourceUrl}>[{sourceUrl}]</a>
+				</p>
+			)}
 			<slot />
 		</main>
 		<BackToTopBtn/>
@@ -127,5 +127,8 @@ const articleDate = updatedDate?.toISOString() ?? pubDate.toISOString();
 	.source-url {
 		font-size: smaller;
 		color: var(--theme-callout);
+	}
+	.clipping-title {
+		font-size: 1.125rem;
 	}
 </style>

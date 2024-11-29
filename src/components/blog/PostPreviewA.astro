@@ -15,7 +15,7 @@ const pinned: boolean = !!post.data.order;
 const urlBasePath = post.collection === "project" ? "projects" : post.collection;
 ---
 
-<li>
+<li class="post-preview">
 	<span>
 		<a href={`/${urlBasePath}/${post.slug}/`} class="post-item">
 			<h4 class="cody-link inline font-bold" >{post.data.title}</h4>
@@ -33,10 +33,19 @@ const urlBasePath = post.collection === "project" ? "projects" : post.collection
 		<FormattedDate date={postDate}/>
 	</p>
 	{withDesc && ( <p class="italic">{post.data.description}</p> )}
+	{post.data.authors && (
+		<p class="italic">
+				<span>{post.data.authors}</span>
+		</p>
+	)}
 </li>
 <style>
 	.post-item:before {
 		content: "#";
 		@apply text-accent-2;
-	}	
+	}
+	.post-preview {
+		background-color: var(--theme-bg);
+		@apply p-1;
+	}
 </style>

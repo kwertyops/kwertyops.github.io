@@ -41,12 +41,42 @@
   * CSS for markdown and MDX blog posts
   */
 
-  .prose-cody blockquote {
+  .youtube-video {
+    max-width: 400px;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+  }
+
+  .embedded-post {
+    padding: 0.3rem;
+		background-color: var(--theme-bg);
+	}
+
+	.embedded-post .source-url {
+		font-size: smaller;
+		/* color: var(--theme-callout); */
+	}
+
+  @media (min-width: 640px) {
+    .embedded-post {
+      @apply p-3;
+    }
+  }
+
+  .post-content blockquote {
     @apply text-quote border-l-[6px] pl-4 my-1;
     @apply prose-quoteless;
     font-style: normal;
     position: relative;
     border-color: var(--theme-surface);
+  }
+
+  .page-content blockquote {
+    /* @apply text-quote border-l-[6px] pl-4 my-1; */
+    @apply prose-quoteless;
+    /* font-style: normal; */
+    position: relative;
+    border-color: var(--theme-accent);
   }
 
   .prose-cody blockquote:before {
@@ -178,7 +208,14 @@
   }
 
   .cody-bg {
-    @apply p-4 bg-surface;
+    @apply bg-surface;
+    padding: 0.3rem;
+  }
+
+  @media (min-width: 640px) {
+    .cody-bg {
+      @apply p-4;
+    }
   }
 
   .cody-copy-code {

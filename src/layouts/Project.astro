@@ -15,6 +15,8 @@ const {
 	data: {
 		title,
 		pubDate,
+		sourceUrl,
+		authors,
 		description,
 		heroImage,
 		platform,
@@ -43,7 +45,7 @@ const articleDate = pubDate.toISOString();
 					<span>{platform}</span>
 				</li>
 			}
-			{ stack && 
+			{ stack.length > 0 && 
 				<li class="project-frontmatter-item">
 					<small>STACK</small>
 					<ul class="inline-flex gap-2 sm:gap-4">
@@ -64,6 +66,18 @@ const articleDate = pubDate.toISOString();
 				<li class="project-frontmatter-item">
 					<small>WEBSITE</small>
 					<a href={website} target="_blank" class="cody-link">{website}</a>
+				</li>
+			}
+			{ sourceUrl &&
+				<li class="project-frontmatter-item">
+					<small>LINK</small>
+					<a href={sourceUrl} target="_blank" class="cody-link">{sourceUrl}</a>
+				</li>
+			}
+			{ authors && 
+				<li class="project-frontmatter-item">
+					<small>AUTHORS</small>
+					<span><i>{authors}</i></span>
 				</li>
 			}
 			{ github && 
