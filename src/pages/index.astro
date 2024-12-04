@@ -23,13 +23,6 @@ const allClippingsByPinned = sortMDByPinned(allClippingsByDate);
 
 <BaseLayout title="Home">
 	<section>
-		<h2 class="title">Feed</h2>
-		<ul class="space-y-4 sm:space-y-2">
-			{allBlogPostsByPinned.map(p => <EmbeddedBlogPost post={p}/>)}
-		</ul>
-	</section>
-
-	<section class="mt-4 sm:mt-8">
 		<h2 class="title">Music</h2>
 		<ul class="space-y-4 sm:space-y-2">
 			{allMusicByPinned.map(p => <EmbeddedMusicPost post={p}/>)}
@@ -40,6 +33,13 @@ const allClippingsByPinned = sortMDByPinned(allClippingsByDate);
 		<h2 class="title">Clippings</h2>
 		<ul class="space-y-4 sm:space-y-2">
 			{allClippingsByPinned.map(p => <EmbeddedClippingPost post={p}/>)}
+		</ul>
+	</section>
+
+	<section class="mt-4 sm:mt-8">
+		<h2 class="title">Feed</h2>
+		<ul class="space-y-4 sm:space-y-2">
+			{allBlogPostsByPinned.map(p => <EmbeddedBlogPost post={p}/>)}
 		</ul>
 	</section>
 
