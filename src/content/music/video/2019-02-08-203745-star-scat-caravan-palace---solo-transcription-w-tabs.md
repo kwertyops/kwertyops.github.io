@@ -2,6 +2,7 @@
 title: "music/video > Star Scat (Caravan Palace) - Solo Transcription w/ tabs"
 description: ""
 pubDate: 2019-02-08 20:37:45
+sourceUrl: "https://www.youtube.com/watch?v=fVjOY7FcGww"
 tags: []
 ---
 

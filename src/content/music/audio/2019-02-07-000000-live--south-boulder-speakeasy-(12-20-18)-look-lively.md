@@ -62,6 +62,7 @@ trackEmbeds: "<iframe style='border: 0; width: 100%; height: 42px;'
             seamless>
         <a href='https://looklively.bandcamp.com/album/live-south-boulder-speakeasy-12-20-18'>Live @ South Boulder Speakeasy (12-20-18) by Look Lively</a>
     </iframe>"
+sourceUrl: "https://looklively.bandcamp.com/album/live-south-boulder-speakeasy-12-20-18"
 tags: []
 ---
 

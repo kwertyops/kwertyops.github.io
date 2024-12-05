@@ -42,6 +42,7 @@ trackEmbeds: "<iframe style='border: 0; width: 100%; height: 42px;'
             seamless>
         <a href='https://looklively.bandcamp.com/album/live-woods-boss-12-21-2019'>Live @ Woods Boss (12-21-2019) by Look Lively</a>
     </iframe>"
+sourceUrl: "https://looklively.bandcamp.com/album/live-woods-boss-12-21-2019"
 tags: []
 ---
 

@@ -27,6 +27,7 @@ trackEmbeds: "<iframe style='border: 0; width: 100%; height: 42px;'
             seamless>
         <a href='https://lapompejazz.bandcamp.com/album/carols-ep'>Carols EP by LAPOMPE</a>
     </iframe>"
+sourceUrl: "https://lapompejazz.bandcamp.com/album/carols-ep"
 tags: []
 ---
 

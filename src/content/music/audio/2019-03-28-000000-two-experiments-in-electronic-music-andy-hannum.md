@@ -22,6 +22,7 @@ trackEmbeds: "<iframe style='border: 0; width: 100%; height: 42px;'
             seamless>
         <a href='https://andyhannum.bandcamp.com/album/two-experiments-in-electronic-music'>Two Experiments in Electronic Music by Andy Hannum</a>
     </iframe>"
+sourceUrl: "https://andyhannum.bandcamp.com/album/two-experiments-in-electronic-music"
 tags: []
 ---
 

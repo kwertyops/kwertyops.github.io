@@ -2,6 +2,7 @@
 title: "music/video > Pirates (Caravan Palace) - Solo Transcription (w/ tabs)"
 description: ""
 pubDate: 2019-06-15 00:28:36
+sourceUrl: "https://www.youtube.com/watch?v=-p72dhHbt7A"
 tags: []
 ---
 

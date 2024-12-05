@@ -2,6 +2,7 @@
 title: "music/video > L'envol (Caravan Palace) - Solo Transcription w/ tabs"
 description: ""
 pubDate: 2017-02-06 06:12:41
+sourceUrl: "https://www.youtube.com/watch?v=KcEwDE_Wx-Q"
 tags: []
 ---
 

@@ -2,6 +2,7 @@
 title: "music/audio > The Red Pyramids (The Red Pyramids)"
 description: ""
 pubDate: 2014-03-21 00:00:00
+sourceUrl: "https://theredpyramids.bandcamp.com/album/the-red-pyramids"
 tags: []
 ---
 

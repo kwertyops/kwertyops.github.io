@@ -37,6 +37,7 @@ trackEmbeds: "<iframe style='border: 0; width: 100%; height: 42px;'
             seamless>
         <a href='https://andyhannum.bandcamp.com/album/music-with-friends'>Music With Friends by Andy Hannum</a>
     </iframe>"
+sourceUrl: "https://andyhannum.bandcamp.com/album/music-with-friends"
 tags: []
 ---
 
