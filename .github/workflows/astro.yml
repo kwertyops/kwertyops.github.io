@@ -29,7 +29,7 @@ env:
   # BUILD_PATH: subfolder
 
 jobs:
-  uild:
+  build:
     name: Build
     runs-on: ubuntu-latest
     steps:
