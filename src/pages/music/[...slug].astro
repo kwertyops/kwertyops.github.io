@@ -1,0 +1,22 @@
+---
+
+import type { InferGetStaticPropsType, GetStaticPaths } from 'astro';
+import MusicPost from '../../layouts/MusicPost.astro';
+import { getAllMusic } from '@/utils';
+
+export const getStaticPaths = (async () => {
+	const musicEntries = await getAllMusic();
+	return musicEntries.map((post) => ({
+		params: { slug: post.slug },
+		props: { post },
+	}));
+}) satisfies GetStaticPaths;
+type Props = InferGetStaticPropsType<typeof getStaticPaths>;
+
+const { post } = Astro.props;
+const { Content } = await post.render();
+---
+
+<MusicPost post={post}>
+	<Content />
+</MusicPost>
