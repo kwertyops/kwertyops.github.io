@@ -54,6 +54,7 @@
 
 	.embedded-post .source-url {
 		font-size: smaller;
+    word-wrap: break-word;
 		/* color: var(--theme-callout); */
 	}
 
