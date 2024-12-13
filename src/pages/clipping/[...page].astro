@@ -5,6 +5,7 @@ import BaseLayout from "@/layouts/Sidebar";
 import EmbeddedPost from "@/components/clipping/EmbeddedPostA";
 import Pagination from "@/components/Pagination";
 import { getAllClippings, getUniqueTags, sortMDByDate, sortMDByPinned } from "@/utils";
+import type { Code } from "astro:components";
 
 export const getStaticPaths = (async ({ paginate }) => {
 	// grab all posts besides drafts and hidden ones
@@ -27,17 +28,28 @@ const meta = {
 	description: "Listen to my clipping",
 };
 
+const pathname = new URL(Astro.request.url).pathname.split('/');
+const firstPath = pathname[1];
+
 const paginationProps = {
 	...(page.url.prev && {
 		prevUrl: {
 			url: page.url.prev,
 			text: `← Previous Posts`,
 		},
+		firstUrl: {
+			url: `/${firstPath}`,
+			text: `<<`,
+		},
 	}),
 	...(page.url.next && {
 		nextUrl: {
 			url: page.url.next,
 			text: `Next Posts →`,
+		},
+		lastUrl: {
+			url: `/${firstPath}/${page.lastPage}`,
+			text: `>>`,
 		},
 	}),
 };
