@@ -1,0 +1,12 @@
+---
+title: "clippings > A positive framework of psychoactive drug use"
+description: ""
+pubDate: 2025-01-13 10:20:43
+sourceUrl: "https://www.samwoolfe.com/2025/01/drugs-the-human-condition-altered-states.html"
+tags: []
+---
+
+> > Hominin evolution occurred in an ever-changing, and at times quickly changing, environmental landscape and entailed advancement into a socio-cognitive niche, i.e., the development of a socially interdependent lifeway based on reasoning, cooperative communication, and social learning. In this context, psychedelics’ effects in enhancing sociality, imagination, eloquence, and suggestibility may have increased adaptability and fitness. We present interdisciplinary evidence for a model of psychedelic instrumentalization focused on four interrelated instrumentalization goals: management of psychological distress and treatment of health problems; enhanced social interaction and interpersonal relations; facilitation of collective ritual and religious activities; and enhanced group decision-making…integration of psilocybin into ancient diet, communal practice, and proto-religious activity may have enhanced hominin response to the socio-cognitive niche, while also aiding in its creation. In particular, the interpersonal and prosocial effects of psilocybin may have mediated the expansion of social bonding mechanisms such as laughter, music, storytelling, and religion, imposing a systematic bias on the selective environment that favored selection for prosociality in our lineage.
+> > ~ [Psychedelics, Sociality, and Human Evolution](https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2021.729425/full)
+> 
+> With this evolutionary account in mind, one could argue that drug use (again, psychedelic use especially) is a part of human nature but in a way that offers several important advantages. Hence, we don’t have to view psychoactive drug use in negative terms (e.g. as a form of unhealthy escapism). Instead, we can view consciousness alteration as helping to solve certain problems in healthy ways, which in turn leads to diverse benefits, including group bonding and the expansion and enhancement of fulfilling activities like comedy, laughter, art, music, sex, and storytelling.
