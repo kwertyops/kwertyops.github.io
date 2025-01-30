@@ -60,10 +60,10 @@ const articleDate = updatedDate?.toISOString() ?? pubDate.toISOString();
 				</div>
 			)}
 			<div class="flex gap-2 items-center">
-				<h1 class="text-3xl my-0">{title}</h1>
+				<h1 class="title music-title my-0">{title}</h1>
 				{ draft && (<span class="px-1 py-0 bg-red-200 text-red-600 text-sm font-semibold">draft</span>)}
 			</div>
-			<span class="font-semibold text-textColor flex gap-2 items-center">
+			<span class="font-semibold text-textColor flex gap-2 items-center text-sm">
 				<FormattedDate date={pubDate} dateTimeOptions={dateTimeOptions}/>
 				<!-- <span>
 					/ {minutesRead}
@@ -88,12 +88,12 @@ const articleDate = updatedDate?.toISOString() ?? pubDate.toISOString();
 			)}
 		</header>
 		{sourceUrl && (
-			<p>
-				<a class="source-url" href={sourceUrl}>[{sourceUrl}]</a>
+			<p class="source-url">
+				<a href={sourceUrl}>[{sourceUrl}]</a>
 			</p>
 		)}
 		<hr class="my-4"/>
-		<main class="prose-sm prose-headings:font-semibold prose-headings:ml-4 prose-headings:before:absolute prose-headings:before:-ms-4 prose-headings:before:text-accent prose-headings:before:content-['#'] prose-th:before:content-none prose-a:text-accent">
+		<main class="prose-sm prose-headings:font-semibold prose-headings:ml-4 prose-headings:before:absolute prose-headings:before:-ms-4 prose-headings:before:text-accent prose-headings:before:content-['#'] prose-th:before:content-none prose-a:text-accent overflow-hidden">
 			<slot />
 		</main>
 		<BackToTopBtn/>
@@ -127,5 +127,11 @@ const articleDate = updatedDate?.toISOString() ?? pubDate.toISOString();
 	.source-url {
 		font-size: smaller;
 		color: var(--theme-callout);
+		overflow: hidden;
+		text-overflow: ellipsis;
+		text-wrap: nowrap;
+	}
+	.music-title {
+		font-size: 1.0rem;
 	}
 </style>

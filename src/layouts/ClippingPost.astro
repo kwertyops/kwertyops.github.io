@@ -63,7 +63,7 @@ const articleDate = updatedDate?.toISOString() ?? pubDate.toISOString();
 				<h2 class="title clipping-title my-0">{title}</h2>
 				{ draft && (<span class="px-1 py-0 bg-red-200 text-red-600 text-sm font-semibold">draft</span>)}
 			</div>
-			<span class="font-semibold text-textColor flex gap-2 items-center">
+			<span class="font-semibold text-textColor flex gap-2 items-center text-sm">
 				<FormattedDate date={pubDate} dateTimeOptions={dateTimeOptions}/>
 				<!-- <span>
 					/ {minutesRead}
@@ -129,6 +129,6 @@ const articleDate = updatedDate?.toISOString() ?? pubDate.toISOString();
 		color: var(--theme-callout);
 	}
 	.clipping-title {
-		font-size: 1.125rem;
+		font-size: 1.0rem;
 	}
 </style>

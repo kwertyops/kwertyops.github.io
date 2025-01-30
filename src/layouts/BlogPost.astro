@@ -60,10 +60,10 @@ const articleDate = updatedDate?.toISOString() ?? pubDate.toISOString();
 				</div>
 			)}
 			<div class="flex gap-2 items-center">
-				<h1 class="text-3xl my-0">{title}</h1>
+				<h1 class="title blog-title my-0">{title}</h1>
 				{ draft && (<span class="px-1 py-0 bg-red-200 text-red-600 text-sm font-semibold">draft</span>)}
 			</div>
-			<span class="font-semibold text-textColor flex gap-2 items-center">
+			<span class="font-semibold text-textColor flex gap-2 items-center text-sm">
 				<FormattedDate date={pubDate} dateTimeOptions={dateTimeOptions}/>
 				<!-- <span>
 					/ {minutesRead}
@@ -127,5 +127,8 @@ const articleDate = updatedDate?.toISOString() ?? pubDate.toISOString();
 	.source-url {
 		font-size: smaller;
 		color: var(--theme-callout);
+	}
+	.blog-title {
+		font-size: 1.0rem;
 	}
 </style>
