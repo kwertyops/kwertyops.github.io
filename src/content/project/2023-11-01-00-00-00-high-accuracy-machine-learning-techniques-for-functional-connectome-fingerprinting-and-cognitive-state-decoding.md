@@ -1,6 +1,6 @@
 ---
 title: "High‐accuracy machine learning techniques for functional connectome fingerprinting and cognitive state decoding"
-description: ""
+description: "Human Brain Mapping 44 (16), 5294-5308"
 pubDate: 2023-11-01 00:00:00
 sourceUrl: "https://onlinelibrary.wiley.com/doi/abs/10.1002/hbm.26423"
 authors: "Andrew Hannum, Mario A Lopez, Saúl A Blanco, Richard F Betzel"

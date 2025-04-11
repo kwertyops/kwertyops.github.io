@@ -1,7 +1,7 @@
 ---
 title: "Data-Driven Hierarchical Open Set Recognition"
-description: ""
-pubDate: 2024-11-04 00:00:00
+description: "40th IEEE International Conference on Robotics and Automation (ICRA@40), p.1835-1836"
+pubDate: 2024-09-26 00:00:00
 sourceUrl: "https://arxiv.org/abs/2411.02635"
 authors: "Andrew Hannum, Max Conway, Mario Lopez, André Harrison"
 tags: []
