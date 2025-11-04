@@ -1,5 +1,5 @@
 ---
-title: "books > fifth:science (Exurb1a)"
+title: "books > The Fifth Science (Exurb1a)"
 description: ""
 pubDate: 2024-11-29
 quoteAuthor: "Exurb1a"
